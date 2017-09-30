@@ -1,0 +1,67 @@
+<base_info>
+	<!--软件标识-->	
+	<id>seed2</id>
+	<!--软件名称,支持多语言,默认匹配第一个-->
+	<names>
+		<name language="zh-CN">测试</name>
+		<name language="en-US">seed2</name>
+	</names>
+	<!--软件版本，打完包之后注意修改此版本号-->
+	<version>0.0.1-SNAPSHOT</version>
+	<!--代码版本号-->
+	<codeVersion>svn:xxxxxx或git:xxxxxxx</codeVersion >
+	<runtime>
+		<tomcat>
+			<port>
+				<connector>8080</connector>
+			</port>
+			<memory>		
+			</memory>
+		</tomcat>
+	</runtime>
+	<!-- 支持的数据库类型 -->
+	<db_support>
+		<support dbid="oracle"/>
+		<support dbid="postgresql"/>	
+	</db_support>	
+	<!-- 本地依赖关系 -->
+	<local_dependencies>
+	<!-- componentid:本地依赖ID -->		
+		<dependency componentid="jdk"/>
+	</local_dependencies>
+	<!-- 网络依赖关系 -->
+	<remote_dependencies>
+		<dependency componentid="redis"/>
+	</remote_dependencies>	
+	<!--代码地址-->
+	<versionUrl>https://192.0.0.241/PublicSecurity/trunk/commons/hik-ga-demo/V1.0.X/client_app_root/start</versionUrl >
+	<!-- 占用端口;包括tcp和udp端口列表,以及端口使用的协议 -->
+	<resource>
+		<ports>
+			<tcp>
+				<port protocol="http">8080</port> 
+			</tcp>
+			<udp>
+				<port protocol=""></port>
+			</udp>
+		</ports>
+	</resource>
+	<!-- 可选,国际化支持-->
+	<languages>
+		<!-- 多语言字典列表。如zh-CN表示简体中文(中国)，en-US表示英语(美国) -->
+		<language>zh-CN</language>
+		<language>en-US</language>
+    </languages>
+	<!--可选,兼容关系(如果遵守版本规范，只需要填写主版本号；否则填写完整版本号) -->	
+	<compatibilities>
+		<compatibility>4.0</compatibility>
+	</compatibilities>
+	<!-- 功能简介 -->
+	<func_description>
+	</func_description>
+	<health_check>
+	</health_check>
+</base_info>
+
+    
+

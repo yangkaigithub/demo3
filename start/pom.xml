@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.hikvision.ga.seed.demo3</groupId>
+		<artifactId>seed_root</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.hikvision.ga.seed.demo3</groupId>
+	<artifactId>start</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<description>工程主目录，存放启动类、启动配置和初始化配置信息</description>
+
+	<!-- spring-boot的web启动的jar包 -->
+	<dependencies>
+		<dependency>
+			<groupId>com.hikvision.ga.seed.demo3</groupId>
+			<artifactId>demo3-software</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.hikvision.ga.seed.demo3</groupId>
+			<artifactId>view</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+		
+	<!--<build>-->
+		<!--<plugins>-->
+			<!--&lt;!&ndash; 设置源文件编码方式 &ndash;&gt;-->
+			<!--<plugin>-->
+				<!--<groupId>org.apache.maven.plugins</groupId>-->
+				<!--<artifactId>maven-compiler-plugin</artifactId>-->
+				<!--<configuration>-->
+					<!--<defaultLibBundleDir>lib</defaultLibBundleDir>-->
+					<!--<source>1.8</source>-->
+					<!--<target>1.8</target>-->
+					<!--<encoding>UTF-8</encoding>-->
+				<!--</configuration>-->
+			<!--</plugin>-->
+			<!--&lt;!&ndash; 打包source文件为jar文件 &ndash;&gt;-->
+			<!--<plugin>-->
+				<!--<groupId>org.apache.maven.plugins</groupId>-->
+				<!--<artifactId>maven-source-plugin</artifactId>-->
+				<!--<configuration>-->
+					<!--<attach>true</attach>-->
+					<!--<encoding>UTF-8</encoding>-->
+				<!--</configuration>-->
+				<!--<executions>-->
+					<!--<execution>-->
+						<!--<phase>compile</phase>-->
+						<!--<goals>-->
+							<!--<goal>jar</goal>-->
+						<!--</goals>-->
+					<!--</execution>-->
+				<!--</executions>-->
+			<!--</plugin>-->
+			<!--<plugin>-->
+				<!--<groupId>org.apache.maven.plugins</groupId>-->
+				<!--<artifactId>maven-assembly-plugin</artifactId>-->
+				<!--<configuration>-->
+					<!--<archive>-->
+						<!--<manifest>-->
+							<!--<mainClass>com.hikvision.ga.seed.SeedApplication</mainClass>-->
+						<!--</manifest>-->
+					<!--</archive>-->
+					<!--<descriptors>-->
+						<!--<descriptor>src/assembly/assembly.xml</descriptor>-->
+					<!--</descriptors>-->
+				<!--</configuration>-->
+				<!--<executions>-->
+					<!--<execution>-->
+						<!--<id>make-assembly</id>-->
+						<!--<phase>package</phase>-->
+						<!--<goals>-->
+							<!--<goal>single</goal>-->
+						<!--</goals>-->
+					<!--</execution>-->
+				<!--</executions>-->
+			<!--</plugin>-->
+		<!--</plugins>-->
+	<!--</build>-->
+
+</project>

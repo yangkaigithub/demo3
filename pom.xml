@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<description>工程根目录pom依赖，统一管理工程所有依赖版本，继承自hik-ga-dependencies</description>
+	<!-- [6.3.8]hik-ga-dependencies: 4.0后的所有开发环境的基础依赖包 -->
+	
+	<!-- [6.2.1.2]groupId 格式规范：com.hikvision.ga.组件标识.服务标识 -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.6.RELEASE</version>
+		<relativePath></relativePath>
+	</parent>
+
+	<groupId>com.hikvision.ga.seed.demo3</groupId>
+	<artifactId>seed_root</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<!-- spring-boot的web启动的jar包 -->
+	<dependencies>
+		<!--<dependency>-->
+			<!--<groupId>org.postgresql</groupId>-->
+			<!--<artifactId>postgresql</artifactId>-->
+			<!--<version>9.4.1212.jre7</version>-->
+		<!--</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!--jpa的jar包 ，操作数据库的，类似hibernate-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-data-jpa</artifactId>-->
+		<!--</dependency>-->
+
+
+
+		<!--thymeleaf模板jar，是很不错的html数据传递取值，类似jsp的jstl-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+
+		<dependency>
+
+			<groupId>org.apache.tomcat.embed</groupId>
+
+			<artifactId>tomcat-embed-jasper</artifactId>
+
+			<scope>provided</scope>
+
+		</dependency>
+	</dependencies>
+
+
+	<packaging>pom</packaging>
+	<modules>
+
+		<!-- api：对外接口目录(可选)，packaging:pom -->
+		<module>api</module>
+
+		<!-- common：公共基础目录(必选*)，packaging:pom -->
+		<module>common</module>
+
+		<!-- modules：业务模块目录(必选*)，packaging:pom -->
+		<module>modules</module>
+
+		<!-- tool：内 部工具目录(可选)，packaging:pom -->
+		<!-- <module>tool</module> -->
+
+		<!-- ws： 存放第三方webservice的wsdl文件(可选)，packaging:pom -->
+		<!-- <module>ws</module> -->
+
+		<!-- view： 前端工程目录(可选)，packaging:jar -->
+		<module>view</module>
+
+		<!-- start： 工程主目录(必选*)，packaging:jar -->
+		<module>start</module>
+
+	</modules>
+
+</project>

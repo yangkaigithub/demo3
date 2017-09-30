@@ -1,0 +1,15 @@
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('2','海康威视平安城市综合应用管理平台软件V2.0','平安城市管理平台');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('3','海康威视iVMS-7000运营级远程集中监控管理平台软件V2.0','远程监控管理平台');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('4','海康威视iVMS-8900社会公共安全视频图像管理系统软件V3.0','社会公共安全视频图像管理系统');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('5','海康威视iVMS-9100信息资源管理系统软件V1.0','信息资源管理系统');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('6','海康威视视频作战侦查平台软件V2.0','视频侦查软件');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('7','海康威视iVMS-8200E公安综合应用管理系统软件V1.0','公安综合应用管理系统');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('8','海康威视iVMS-9100视频图像信息数据库软件V2.0','视频图像信息数据库');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('9','海康威视iVMS-7000E运营级集中监控管理系统软件V4.0','集中监控管理系统');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('10','海康威视iVMS-7000运营级集中监控管理软件V4.0','运营级集中监控管理软件');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('11','海康威视iVMS-7800视频监控综合管理平台软件V1.0','视频综合管理平台');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('12','海康威视iVMS-8201E-NCG系列联网网关软件V1.0','');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('13','海康威视iVMS-8201E-VAG系列视频接入网关软件V1.0','视频接入网关');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('14','海康威视iVMS-9500E可视化实战应用系统软件V1.0','实战应用系统');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('15','海康威视iVMS-9500可视化实战应用系统软件V1.0','实战应用平台');
+INSERT INTO softwaredo(id,name,abbreviation) VALUES ('16','海康威视iVMS-9100E视频图像信息数据库系统软件V2.0','视图库');

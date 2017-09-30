@@ -1,0 +1,41 @@
+div.box-body blockquote {
+	color: grey;
+	font-size: inherit;
+}
+
+.swagger-iframe {
+	width:100%;
+	background-color:white;
+	position:absolute;
+	top: 0;
+	left:0
+	right:0;
+	bottom:0;
+}
+
+.box-body > h1, h2, h3{
+	margin-top: 15px;
+    margin-bottom: 10px;
+}
+ 
+.box-body > h1 {
+	font-size: 2em;
+	font-weight:bolder;
+}
+
+.box-body > h2 {
+	font-size: 1.6em;
+	font-weight:bolder;
+}
+
+.box-body > h3 {
+	font-size: 1.4em;
+	font-weight:bold;
+}
+
+.box-body > h4 {
+	margin-top: 5px;
+    margin-bottom: 5px;
+	font-size: 1.1em;
+	font-weight:bold;
+}
